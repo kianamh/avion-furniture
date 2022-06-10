@@ -1,0 +1,38 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #fff;
+  color: rgb(35, 34, 34);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  transition: all ease 0.2s;
+  text-decoration: none;
+  color: rgb(62, 58, 58);
+}
+
+a:hover {
+  color: #4e4d93;
+}
+
+button {
+  cursor: pointer;
+  transition: all ease 0.2s;
+  font-family: "Titillium Web", sans-serif;
+  height: 56px;
+  padding: 0 32px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}

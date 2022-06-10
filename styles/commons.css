@@ -1,0 +1,142 @@
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+header {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 0 20px 0;
+}
+
+.header-content > a > h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 17px;
+  transition: all ease 0.2s;
+}
+
+.header-content > a > h1:hover {
+  letter-spacing: 19px;
+}
+
+.header-control {
+  display: flex;
+  gap: 20px;
+}
+
+header > nav {
+  margin: 20px 0 0 0;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+header > nav > ul > li > a {
+  color: #18272f;
+  position: relative;
+  text-decoration: none;
+}
+
+header > nav > ul > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #4e4d93;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+header > nav > ul > li > a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Footer styles */
+.footer {
+  gap: 20px;
+  background-color: #2a254b;
+  color: #fff;
+  padding: 58px 0 25px 0;
+  width: 100%;
+}
+
+.footer > .container {
+  width: 1280px;
+  margin: auto;
+}
+
+.footer > .container > .footer-top {
+  grid-template-columns: 1fr 1fr 1fr 50%;
+  display: grid;
+  padding: 0 0 60px 0;
+}
+
+.footer > .container .footer-titles {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+
+.footer > .container > .footer-top > .footer-menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer > .container > .footer-top > .footer-menu > ul > li > a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.footer-form > form {
+  display: flex;
+}
+
+.footer-form > form > button {
+  background-color: #f9f9f9;
+  color: #1e1e1f;
+  border: 0;
+  height: 48px;
+  padding: 15px;
+  width: max-content;
+}
+
+.footer-form > form > input {
+  height: 48px;
+  padding: 0 15px 0;
+  width: 50%;
+  background-color: #565582;
+  border: 0;
+}
+
+.footer > .container > .footer-top {
+  border-bottom: 1px solid #4e4d93;
+  margin: 0 0 25px 0;
+}
+
+.footer > .container > .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > .container > .footer-bottom > ul {
+  display: flex;
+  gap: 20px;
+}
